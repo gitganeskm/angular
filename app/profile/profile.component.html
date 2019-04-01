@@ -1,0 +1,33 @@
+
+<form #form ="ngForm" (submit) = "onSubmit(form)">
+  <div class="form-group"> 
+  <label>First Name </label>
+  <input name="FirstName" #FirstName="ngModel" [(ngModel)]="service.formData.FirstName" class="form-control">
+  </div >
+  <div class="form-group"> 
+    <label>Last Name </label>
+    <input name="LastName" #LastName="ngModel" [(ngModel)]="service.formData.LastName" class="form-control">
+    </div >  
+  <div class="form-group"> 
+    <label>Street</label>
+    <input name="Street" #Street="ngModel" [(ngModel)]="service.formData.Street" class="form-control">
+    </div >  
+  <div class="form-group"> 
+    <label>City</label>
+    <input name="City" #City="ngModel" [(ngModel)]="service.formData.City" class="form-control">
+    </div >  
+  <div class="form-group"> 
+    <label>State</label>
+    <input name="State" #State="ngModel" [(ngModel)]="service.formData.State" class="form-control">
+    </div >  
+  <div class="form-group"> 
+      <label>Zipcode</label>
+      <input name="Zipcode" #Zipcode="ngModel" [(ngModel)]="service.formData.Zipcode" class="form-control">
+    </div >    
+  
+       <button type="submit" class="btn btn-dark btn-block">
+         Submit
+       </button>
+     
+    
+  </form>
