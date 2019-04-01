@@ -1,3 +1,11 @@
-<p>
-  profile-list works!
-</p>
+<table class="table table-hover">
+  <tr *ngFor="let profile of service.profilelist">
+  <td (click)= populateform(profile)>{{profile.FirstName}}</td>
+  <td (click)= populateform(profile)>{{profile.LastName}}</td>
+  <td (click)= populateform(profile)>{{profile.Street}}</td>
+  <td (click)= populateform(profile)>{{profile.City}}</td>
+  <td (click)= populateform(profile)>{{profile.State}}</td>
+  <td (click)= populateform(profile)>{{profile.Zipcode}}</td>
+  <td><button (click)= "onDelete(profile.ProfileId)"  class="btn btn-sm btn-outline-danger">X</button></td>
+</tr>
+</table>
